@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành An toàn thông tin nâng cao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: #ffffff;
+            padding: 40px;
+            margin-top: 50px;
+        }
+        .cipher-list .list-group-item {
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .cipher-list .list-group-item:hover {
+            background-color: #007bff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,123,255,0.2);
+        }
+        .cipher-list .list-group-item:hover a {
+            color: #fff !important;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                
+                <div class="main-card text-center">
+                    
+                    <img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png" 
+                         alt="hutech" 
+                         style="max-width: 280px; height: auto;" 
+                         class="img-fluid mb-4">
+                    
+                    <h3 class="text-uppercase font-weight-bold text-dark mb-4" style="letter-spacing: 0.5px; font-size: 1.5rem;">
+                        Bài Thực Hành<br>Bảo Mật Thông Tin Nâng Cao
+                    </h3>
+                    
+                    <hr class="my-4" style="border-top: 2px solid #e9ecef;">
+                    
+                    <p class="text-muted mb-4">Vui lòng chọn thuật toán mật mã cần thực hiện:</p>
+                    
+                    <div class="list-group cipher-list">
+                        <div class="list-group-item list-group-item-action border-primary">
+                            <a href="/caesar" class="text-primary d-block py-1">Caesar Cipher</a>
+                        </div>
+                        <div class="list-group-item list-group-item-action border-primary">
+                            <a href="/vigenere" class="text-primary d-block py-1">Vigenère Cipher</a>
+                        </div>
+                        <div class="list-group-item list-group-item-action border-primary">
+                            <a href="/playfair" class="text-primary d-block py-1">Playfair Cipher</a>
+                        </div>
+                        <div class="list-group-item list-group-item-action border-primary">
+                            <a href="/railfence" class="text-primary d-block py-1">Rail Fence Cipher</a>
+                        </div>
+                        <div class="list-group-item list-group-item-action border-primary">
+                            <a href="/transposition" class="text-primary d-block py-1">Transposition Cipher</a>
+                        </div>
+                        <div class="list-group-item list-group-item-action border-danger">
+                            <a href="/rsa" class="text-danger d-block py-1">RSA Cipher</a>
+                        </div>
+                    </div>
+                    
+                </div> </div>
+        </div>
+    </div>
+
+</body>
+</html>
